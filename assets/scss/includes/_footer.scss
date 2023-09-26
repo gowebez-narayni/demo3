@@ -1,0 +1,66 @@
+// ==================footer sec start====================
+.foot {
+    background-image: url(/public/images/infinite-loop-03.jpg);
+    text-align: center;
+    color: $clr-white;
+
+    @include media-min-lg {
+        background-image: url(/public/images/infinite-loop-03.jpg);
+    }
+    .page {
+        padding: 20px;
+        .last {
+            .par1{
+                padding: 20px;
+                font-size: 13px;
+            }
+            .par2{
+                font-size: 13px;
+            }
+        }
+        .common {
+            @include media-min-lg {
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+            @include media-min-lg {
+                    display: flex;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                background-color: transparent;
+                border-style: groove;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+            textarea {
+                width: 100%;
+                padding: 20%;
+                background-color: transparent;
+                border-radius: 5px;
+            }
+            .b1 {
+                background-color: $clr-blue;
+                padding: 10px;
+                width: 50%;
+                border-radius: 5px;
+            }
+            .symbol{
+                text-indent: 0;
+                p{
+                    text-align: start;
+                    i{
+                        margin-right: 2rem;
+                    }
+                } 
+            }
+        }
+        .copy{
+            margin-top: 6rem;
+            font-size: 10px;
+        }
+    }
+}
+// ===============================footer sec ended=================================

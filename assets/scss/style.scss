@@ -1,0 +1,143 @@
+@import './abstracts/variables';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+@import './includes/button';
+// ===============================what we do sec start=====================================
+.section1 {
+    margin: 15px;
+    align-items: center;
+        h3{
+            color: $clr-blue;
+            text-align: start;
+            font-size: 20px;
+            font-family: 'Libre Baskerville', serif;
+            i{
+                font-size: 2rem;
+            }
+        }
+    @include media-min-lg {
+        font-size: 16px;
+    }
+    i {
+        padding: 20px;
+    }
+    .section3 {
+        .btn {
+            background-color: #3460ad;
+            padding: 8px;
+            // margin: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+    }
+    .section2 {
+        @include media-min-lg {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .section3 {
+        @include media-min-lg {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+// =========================what we do sec ended=============================
+// =========================testimonial sec start==============================
+.wrap {
+    background-image: url(/public/images/infinite-loop-02-mobile.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $clr-white;
+    .dot{
+        text-align: center;
+    }
+    @include media-min-lg {
+        background-image: url(/public/images/infinite-loop-02.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+    .word {
+        text-align: center;
+        padding: 2rem;
+        h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .circle {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 13px;
+        .cir1 {
+            img {
+                border-radius: 100%;
+            }
+        }
+        .cir2 {
+            img {
+                border-radius: 100%;
+            }
+        }
+        .cir3 {
+            img {
+                border-radius: 100%;
+            }
+        }
+        @include media-min-lg {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 15px;
+        }
+        @include media-min-lg{
+            .author{
+                padding: 20px;
+                margin-left: 6rem;
+            }
+        }
+    }
+}
+// ==============================testimonial sec ended========================================
+// ================================gallery sec start======================================
+.box3 {
+    height: 80vh;
+    .dot{
+        text-align: center;
+    }
+    @include media-min-lg{
+        margin: 4rem;
+    }
+    .gall {
+        text-align: center;
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            color: $clr-blue;
+            margin-bottom: 10px;
+        }
+    }
+    .images {
+        img{
+            width: 100%;
+        }
+        @include media-min-lg {
+            display: flex;
+            margin-top: 3rem;
+            justify-content: center;
+        }
+        .im {
+            padding: 10px;
+        }
+    }
+}
+// ====================================gallery sec ended===============================================
